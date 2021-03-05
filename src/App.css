@@ -43,7 +43,12 @@ height: 40vh;
 .divider {
   border-bottom: 2px solid rgba(177, 35, 35, 0.274) ;
 }
-
+.wraps {
+  flex-wrap: wrap;
+}
+.text-container {
+  max-width: 20rem;
+}
 .input {
   padding: 0.5rem;
   border: 1px solid lightgray;

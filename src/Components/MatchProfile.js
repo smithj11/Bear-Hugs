@@ -8,24 +8,24 @@ class MatchProfile extends React.Component {
 
     render() {
         return (
-            <div className="row center-row">
-
+            <div className="row center-row margin-5rem">
                 <div className="col">
                     <div className="box">
                         <div className="col center-col">
                             <div className="row center-row">
                                 <div className="img-container">
-                                    <img className="match-img" src="possum-on-horse.png"></img>
+                                    <img className="match-img" src={this.props.imgsrc}></img>
                                 </div>
                             </div>
                             <div className="row center-row">
-                                <h2 className="display-block">Paul Possum, 22</h2>
+                                <h2 className="display-block">{this.props.name}, {this.props.age}</h2>
                                 <br></br>
-                                <h3 className="light-gray block-display">Art History BA</h3>
                             </div>
                             <div className="scroll-box margin-1rem">
-                                <div className="row center-row">
-                                    <p>I love to stand on top of art installations</p>
+                                <div className="row center-row wraps">
+                                    <div className="text-container">
+                                    <p>{this.props.descrip}</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="row center-row fit-container-width red">
@@ -49,7 +49,6 @@ class MatchProfile extends React.Component {
                         </div>
                     </div>
                 </div>
-
             </div>
 
         );
